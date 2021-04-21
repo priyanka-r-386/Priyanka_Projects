@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+body {
+  font-family: "Kaushan Script", cursive;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
+
+.nav-item a {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.cart-info {
+  font-size: 1rem;
+}
+
+.nav-link {
+  transition: all 1s ease-in-out;
+}
+
+.cart-info__icon {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+
+.fa-shopping-cart {
+  cursor: pointer;
+}
+/* Banner */
+
+.max-height {
+  min-height: calc(100vh - 68px);
+  background: url("./images/pexels-acharaporn-kamornboonyarush-1028704.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.banner-link {
+  background: transparent !important;
+  border: 0.2rem solid black;
+  border-color: black;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+}
+
+.banner-link:hover {
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%) !important;
+  border: 0.2rem solid;
+}
+
+/* About Us */
+
+.container .about-img_container {
+  /* position: relative; */
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+}
+
+.row {
+  background-color: #ffecd2;
+}
+
+.my-4 {
+  font-size: 1.5rem;
+}
+
+.container .about-img_container :hover {
+  transition: all 1s ease-in-out;
+  opacity: 0.5;
+  box-shadow: 0 10px 15px rgb(0, 0, 0);
+}
+
+/* store */
+
+.search-box {
+  background: gray;
+  height: 37px;
+  /* display: inline; */
+}
+.form-control {
+  height: 37px;
+}
+
+.single-item {
+  transition: all 0.3 linear;
+}
+
+.single-item:hover {
+  box-shadow: 0 10px 15px rgb(0, 0, 0);
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.store-img {
+  transition: all 1s ease-in-out;
+}
+.img-container:hover .store-img {
+  transform: scale(1.2);
+}
+
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.7rem;
+  background: rgb(221, 208, 208);
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 100%);
+}
+.img-container:hover .store-item-icon {
+  transform: translate(0, 0);
+  transition: all 1s ease-out;
+}
+
+.store-item-icon:hover {
+  color: #fcb69f;
+}
+/* Cart */
+.cart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20rem;
+  height: 100%;
+  transition: all 1s ease-in-out;
+  z-index: 2;
+  background: #ffecd2;
+  overflow: scroll;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.cart-item {
+  /* position: absolute; */
+  display: block;
+}
+.cart-footer .banner-link {
+  position: absolute;
+  display: block;
+}
+
+.cart h4,
+h5 {
+  font-size: 0.8rem;
+}
+.cart .row {
+  align-items: center;
+  justify-items: center;
+}
+
+.cart {
+  padding: 1rem;
+}
+
+.close-cart:hover {
+  color: #f59e81;
+}
+.remove-item:hover {
+  color: #fa9e7f;
+}
+.btn-pink {
+  display: block;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border-color: black;
+  cursor: pointer;
+}
+.btn-pink:hover {
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%) !important;
+  border: 0.2rem solid;
+}
+.showCart {
+  transform: translateX(0);
+}
+.remove-item {
+  position: absolute;
+  right: 0;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastry Shop</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+        <!-- font awesome -->
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:pink">
+        <a class="navbar-brand" href="#">
+           <img src="./images/Donut-512.webp" width="40" height="40" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#store">Stores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#store">Order Now</a>
+                </li>
+            </ul>
+            </div>
+        <div class="nav-info-items d-none d-lg-flex ">
+            <div class="nav-info align-items-center  d-flex justify-content-between  mx-lg-5 ">
+                <span class="cart-info__icon mx-lg-3">Call
+                    <i class="fas fa-phone"></i>
+                </span>
+                <p class="mb-0">+ 123456789</p>
+            </div>
+        <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between  mx-lg-5 ">
+             <span class="cart-info__icon  mx-lg-3">
+                <i class="fas fa-shopping-cart"></i>
+            </span>
+            <p class="mb-0 text-capitalize">
+                <span class="item-count">0</span>
+                items-$
+                <span class="item-total">0.00</span>
+    </p>
+   </div>
+</div>
+    </nav>
+<!-- nav -->
+<!-- Banner -->
+<div class="container-fluid">
+    <div class="row max-height justify-content-center align-items-center ">
+        <div class="col-10 mx-auto banner text-center">
+            <h1 class="text-capitalize">Welcome to <strong class="banner-title">"Manu's" Pastry</strong> 
+             </h1>
+             <a href="#store" class="btn btn-info-eat banner-link text-uppercase my-2">let's eat</a>
+    
+    </div>
+        <div class="cart" id="cart">
+            <div class="cart-item-title d-flex justify-content-between text-capitalize my-3">
+                
+            <span class="close-cart md-5">
+                    <i class="far fa-window-close"></i>
+            </span> 
+            <h3 class="align-items-center text-capitalize mx-5">Cart Items</h3>
+            </div>
+           <div class="carts">
+            </div>
+            <div>
+            </div>
+            <div class="cart-footer mt-3  justify-content-center">
+                <h3 class="text-capitalize mb-3 py-3 text-center">Your Total: $<strong class="cart-total">0</strong></h3>
+                <a href="#" id="clear-cart" class="btn btn-pink text-uppercase my-2">Clear Cart</a>
+            </div>
+           
+        </div>
+        </div>
+      
+   
+</div>
+
+<!-- Banner -->
+<!-- About Us -->
+
+<section class="about py-5" id ="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-10 mx-auto col-md-6 my-5 align-items-center justify-content-between">
+                <h1 class="text-capitalize">About <strong class="banner-title">Us</strong></h1>
+                <p class="my-4 text-muted w-75">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, alias adipisci placeat omnis quibusdam quidem! Quos praesentium dolorum ad temporibus. Saepe dolorem quo eaque necessitatibus. Provident, sit libero! Molestias, minima!
+                </p>
+            </div>
+            <div class="col-10 mx-auto col-md-6 my-5 align-items-center">
+                <div class="about-img_container">
+                    <img src="./images/pexels-diana-akhmetianova-4722021.jpg"  class="img-fluid"alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- store -->
+<section id="store" class="store py-5">
+<div class="container">
+    <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+            <h1 class="text-capitalize"> our <strong class="banner-title">store</strong></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 mx-auto d-flex justify-content-around sortBtn flex-wrap">
+            <a href="#store" class="btn btn-info-all banner-link text-uppercase my-2" data-filter="all">all</a>
+            <a href="#store" class="btn btn-info-cake banner-link text-uppercase my-2" data-filter="cake">cake</a>
+            <a href="#store" class="btn btn-info-cupcake banner-link text-uppercase my-2" data-filter="cup-cake">cup cake</a>
+            <a href="#store" class="btn btn-info-donut banner-link text-uppercase my-2" data-filter="donut">donut</a>
+        </div>
+    </div>
+<div class="row">
+    <div class="col-10 mx-auto col-md-6">
+        <form >
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text search-box" id="search-icon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control" placeholder="item..." id="search-item">
+            </div>
+        </form>
+    </div>
+</div>
+<!-- store items -->
+<div class="row store-items" id="store-items">
+    
+</div>
+</div>
+
+</section>
+<!-- cart -->
+
+
+<script src="./js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- script js -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+
+</html>
